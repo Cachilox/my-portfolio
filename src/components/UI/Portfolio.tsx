@@ -10,7 +10,7 @@ const Portfolio = () => {
 
   const showModalHandler = (id: number) => {
     setShowModal(true);
-    setActiveID(id)
+    setActiveID(id);
   };
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Portfolio = () => {
         <div className="flex items-center justify-between flex-wrap">
           <div className="mb-7 sm:mb-0">
             <h3 className="text-headingColor text-[2rem] font-[700]">
-              My recent Projects
+              Mis proyectos recientes
             </h3>
           </div>
 
@@ -87,7 +87,7 @@ const Portfolio = () => {
                     className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 
                     rounded-[8px] font-[500] ease-in duration-200"
                   >
-                    See Details
+                    Ver detalles
                   </button>
                 </div>
               </div>
@@ -95,9 +95,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-      {
-        showModal && <Modal activeID={activeID} setShowModal={setShowModal} />
-      }
+      {showModal && <Modal activeID={activeID} setShowModal={setShowModal} />}
     </section>
   );
 };

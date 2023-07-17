@@ -76,7 +76,7 @@ const Header = () => {
                   className="text-smallTextColor font-[600]"
                   href="#about"
                 >
-                  About
+                  Acerca de
                 </a>
               </li>
               <li>
@@ -85,7 +85,16 @@ const Header = () => {
                   className="text-smallTextColor font-[600]"
                   href="#education"
                 >
-                  Education
+                  Educación
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={handleClick}
+                  className="text-smallTextColor font-[600]"
+                  href="#skills"
+                >
+                  Habilidades
                 </a>
               </li>
               <li>
@@ -94,7 +103,7 @@ const Header = () => {
                   className="text-smallTextColor font-[600]"
                   href="#portfolio"
                 >
-                  Portfolio
+                  Portafolio
                 </a>
               </li>
               <li>
@@ -103,7 +112,7 @@ const Header = () => {
                   className="text-smallTextColor font-[600]"
                   href="#contact"
                 >
-                  Contact
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -116,7 +125,7 @@ const Header = () => {
               <i className="ri-moon-line text-lg font-[600]"></i>
             </button>
 
-            <span onClick={toggleMenu} className="text-2xl text-smallTextColor md:hidden cursor-pointer">
+            <span onClick={toggleMenu} className="text-2xl text-smallTextColor hidden show__menu cursor-pointer">
               <i className="ri-menu-line"></i>
             </span>
           </div>

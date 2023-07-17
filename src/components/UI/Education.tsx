@@ -2,19 +2,20 @@ import logoHenry from "../../assets/images/logo-henry.png";
 import logoCoder from "../../assets/images/logo-coderhouse.png";
 
 const Education = () => {
-
   return (
     <section className="overflow-x-hidden" id="education">
       <div className="container lg:pt-5">
         <div className="text-center">
           <h2 className="text-headingColor font-[800] text-[2.4rem] mb-5">
-            Education
+            Educación
           </h2>
           <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-            molestias voluptatum voluptates possimus doloremque animi fuga
-            necessitatibus, ex neque aperiam doloribus iusto eum et sit magnam
-            assumenda deserunt, totam repudiandae.
+            Desde 2021, me aventuré en el mundo del desarrollo web de forma
+            autodidacta. Posteriormente, decidí llevar mi aprendizaje al
+            siguiente nivel al inscribirme en la carrera de Desarrollo Frontend
+            React en Coderhouse. Fue en ese momento cuando supe que esto era lo
+            mío. Para afianzar mis conocimientos, también completé el intensivo
+            Bootcamp de Soy Henry.
           </p>
         </div>
 
@@ -27,21 +28,25 @@ const Education = () => {
               <div className="mt-6 sm:mt-0 sm:mb-12">
                 <div className="flex items-center flex-col sm:flex-row">
                   <div className="flex justify-start w-full mx-auto items-center">
-                    <div className="w-full sm:w-1/2 sm:pr-8">
-                      <div
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150"
-                      >
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      className="w-full sm:w-1/2 sm:pr-8"
+                    >
+                      <span className="text-smallTextColor text-[0.9rem] font-[700] pl-4">
+                        2023
+                      </span>
+                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
-                          Full stack developer
+                          Full stack web developer
                         </h3>
 
-                        <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-6">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit. Voluptate esse reprehenderit non voluptas
-                          laudantium, consectetur eligendi numquam fuga ducimus
-                          cupiditate.
+                        <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-[22px]">
+                          Me gradué con el stack PERN después de completar el
+                          intensivo programa de desarrollo web en Soy Henry.
+                          Durante el bootcamp, adquirí experiencia en el diseño
+                          y desarrollo de aplicaciones, lo que me proporciono
+                          una visión amplia en el desarrollo de software.
                         </p>
                       </div>
                     </div>
@@ -58,21 +63,25 @@ const Education = () => {
               <div className="mt-6 sm:mt-0 sm:mb-12">
                 <div className="flex items-center flex-col sm:flex-row">
                   <div className="flex justify-end w-full mx-auto items-center">
-                    <div className="w-full sm:w-1/2 sm:pl-8">
-                      <div
-                        data-aos="fade-left"
-                        data-aos-duration="1200"
-                        className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150"
-                      >
+                    <div
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                      className="w-full sm:w-1/2 sm:pl-8"
+                    >
+                      <span className="text-smallTextColor pl-4 text-[0.9rem] font-[700]">
+                        2022
+                      </span>
+                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
-                          Front end developer
+                          Carrera de Desarrollo Front End React
                         </h3>
 
-                        <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-6">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit. Voluptate esse reprehenderit non voluptas
-                          laudantium, consectetur eligendi numquam fuga ducimus
-                          cupiditate.
+                        <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-[22px]">
+                          En la carrera adquirimos habilidades para crear sitios
+                          web y aprender las mejores prácticas de diseño web.
+                          Aprendimos a programar con JavaScript y React Js. Esto
+                          nos permite desarrollar sitios más complejos,
+                          dinámicos y escalables.
                         </p>
                       </div>
                     </div>

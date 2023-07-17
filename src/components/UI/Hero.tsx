@@ -1,5 +1,6 @@
 import heroImg from "../../assets/images/hero.svg";
 import CountUp from "react-countup";
+import CV from "../../assets/data/Mariano_Alvarez_CV.pdf";
 
 const Hero = () => {
   return (
@@ -11,16 +12,16 @@ const Hero = () => {
             <h5
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="text-headingColor font-[600] text-[16px]"
+              className="text-headingColor font-[600] text-[17px]"
             >
-              Hello welcome
+              Hola Bienvenido
             </h5>
             <h1
               data-aos="fade-up"
               data-aos-duration="1500"
               className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
-              I'm Mariano Alvarez <br /> Full Stack Developer
+              Soy Mariano Alvarez <br /> Full Stack Developer
             </h1>
 
             <div
@@ -29,44 +30,54 @@ const Hero = () => {
               data-aos-delay="200"
               className="flex items-center gap-6 mt-7"
             >
-              <button className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]">
-                Download CV <i className="ri-article-fill"></i>
-              </button>
+              <a
+                href={CV}
+                download
+                className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
+              >
+                Descargar CV <i className="ri-article-fill text-[1.1rem]"></i>
+              </a>
             </div>
             <p
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="flex gap-2 text-headingColor mt-10 font-[500] text-[15px] leading-7 sm:pl-14 sm:pr-10"
+              className="flex gap-2 text-headingColor mt-8 font-[500] text-[16px] sm:pl-14 sm:pr-10 leading-7 "
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quo
-              repellat consequuntur nemo et fuga? Quidem, blanditiis aliquid.
-              Nihil, recusandae!
+              Con enfoque en front-end, especializado en React.js, y experiencia
+              en desarrollo tanto front-end como back-end, mis principales
+              intereses radican en crear soluciones innovadoras y funcionales
+              que satisfagan las necesidades de los usuarios. Busco
+              oportunidades que me permitan adquirir experiencia profesional y
+              seguir mejorando como desarrollador web.
             </p>
 
             <div className="flex items-center gap-9 mt-10">
-              <span className="text-smallTextColor text-[15px] font-[600]">
-                Follow me:
+              <span className="text-smallTextColor text-[1.1rem] font-[600]">
+                Sígueme:
               </span>
               <span>
                 <a
-                  href="#github"
-                  className="text-smallTextColor text-[18px] font-[600]"
+                  href="https://github.com/Cachilox"
+                  target="_blank"
+                  className="text-smallTextColor hover:text-slate-900 text-[1.3rem] active:relative active:top-[2px] font-[600]"
                 >
                   <i className="ri-github-fill"></i>
                 </a>
               </span>
               <span>
                 <a
-                  href="#twitter"
-                  className="text-smallTextColor text-[18px] font-[600]"
+                  href="https://twitter.com/CachiloDev"
+                  target="_blank"
+                  className="text-smallTextColor hover:text-blue-600 active:relative active:top-[2px] text-[1.3rem] font-[600]"
                 >
                   <i className="ri-twitter-fill"></i>
                 </a>
               </span>
               <span>
                 <a
-                  href="#linkedin"
-                  className="text-smallTextColor text-[18px] font-[600]"
+                  href="https://www.linkedin.com/in/cachilo/"
+                  target="_blank"
+                  className="text-smallTextColor hover:text-blue-500 active:relative active:top-[2px] text-[1.3rem] font-[600]"
                 >
                   <i className="ri-linkedin-box-fill"></i>
                 </a>
@@ -88,7 +99,7 @@ const Hero = () => {
                 <CountUp start={0} end={2} duration={2} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[600] text-[18px]">
-                Years of experience
+                Años de experiencia
               </h4>
             </div>
             <div className="mb-10">
@@ -101,10 +112,10 @@ const Hero = () => {
             </div>
             <div className="mb-10">
               <h2 className="text-headingColor font-[700] text-[32px]">
-                <CountUp start={0} end={6} duration={2} suffix="+" />
+                <CountUp start={0} end={8} duration={2} suffix="+" />
               </h2>
               <h4 className="text-headingColor font-[600] text-[18px]">
-                Proyects completed
+                Proyectos completados
               </h4>
             </div>
           </div>

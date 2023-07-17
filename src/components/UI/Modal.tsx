@@ -51,11 +51,6 @@ const Modal = ({ activeID, setShowModal }: ModalProps) => {
           </h2>
         </div>
 
-        {/* <div>
-          <p className="text-[15px] leading-7 text-headingColor">
-            {portfolios?.description}
-          </p>
-        </div> */}
 
         <div className="mt-3 flex items-center gap-3 flex-wrap">
           <h4 className="text-headingColor text-[18px] font-[700]">
@@ -74,12 +69,12 @@ const Modal = ({ activeID, setShowModal }: ModalProps) => {
         <div className="flex gap-10">
           <a href={portfolios?.siteUrl} target="_blank">
             <button className="bg-primaryColor text-white py-2 px-4 mt-5 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300">
-              Demo
+              Demo <i className="ri-pages-line"></i>
             </button>
           </a>
           <a href={portfolios?.repository} target="_blank">
             <button className="bg-primaryColor text-white py-2 px-4 mt-5 rounded-[8px] font-[500] hover:bg-headingColor ease-in duration-300">
-              Code
+              Code <i className="ri-code-line"></i>
             </button>
           </a>
         </div>
