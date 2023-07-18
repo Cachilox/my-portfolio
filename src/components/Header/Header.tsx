@@ -4,7 +4,7 @@ const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const element = document.documentElement;
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -52,9 +52,9 @@ const Header = () => {
   };
 
   const toggleMenu = () => {
-    menuRef.current?.classList.toggle("show__menu")
+    menuRef.current?.classList.toggle("show__menu");
     setMenuOpen(!menuOpen);
-  }
+  };
 
   const onWindowMatch = () => {
     if (
@@ -65,7 +65,7 @@ const Header = () => {
     } else {
       element.classList.remove("dark");
     }
-  }
+  };
 
   useEffect(() => {
     switch (theme) {
@@ -99,7 +99,7 @@ const Header = () => {
       ref={headerRef}
       className="w-full h-20 leading-[80px] flex items-center dark:bg-gray-900"
     >
-      <div className="container">
+      <nav className="container">
         <div className="flex items-center justify-between">
           {/* ------LOGO------ */}
           <div className="flex items-center gap-[10px]">
@@ -121,7 +121,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#about"
                 >
                   Acerca de
@@ -130,7 +130,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#education"
                 >
                   Educación
@@ -139,7 +139,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#skills"
                 >
                   Habilidades
@@ -148,7 +148,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#portfolio"
                 >
                   Portafolio
@@ -157,7 +157,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#contact"
                 >
                   Contacto
@@ -193,7 +193,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 };
