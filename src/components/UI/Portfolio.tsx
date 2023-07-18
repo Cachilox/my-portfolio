@@ -74,6 +74,8 @@ const Portfolio = () => {
             >
               <figure>
                 <img
+                  width={358}
+                  height={224}
                   className="rounded-lg"
                   src={project.imgUrl}
                   alt={project.title}

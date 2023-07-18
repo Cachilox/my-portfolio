@@ -33,10 +33,10 @@ const Education = () => {
                       data-aos-duration="1200"
                       className="w-full sm:w-1/2 sm:pr-8"
                     >
-                      <span className="text-smallTextColor dark:text-white text-[0.9rem] font-[700] pl-4">
-                        mar. 2023 - jul. 2023
-                      </span>
-                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
+                      <div className="bg-white p-4 mt-2 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
+                        <span className="text-smallTextColor dark:text-white text-[0.9rem] font-[700]">
+                          mar. 2023 - jul. 2023
+                        </span>
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
                           Full stack web developer
                         </h3>
@@ -68,10 +68,10 @@ const Education = () => {
                       data-aos-duration="1200"
                       className="w-full sm:w-1/2 sm:pl-8"
                     >
-                      <span className="text-smallTextColor dark:text-white pl-4 text-[0.9rem] font-[700]">
-                        may. 2022 - nov. 2022
-                      </span>
-                      <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
+                      <div className="bg-white p-4 mt-2 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
+                        <span className="text-smallTextColor dark:text-white text-[0.9rem] font-[700]">
+                          may. 2022 - nov. 2022
+                        </span>
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
                           Carrera de Desarrollo Front End React
                         </h3>
