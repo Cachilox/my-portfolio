@@ -75,7 +75,7 @@ const proyects = [
     title: "My portfolio",
     technologies: ["TypeScript", "React", "Tailwindcss"],
     siteUrl: "#",
-    repository: "",
+    repository: "https://github.com/Cachilox/my-portfolio",
   },
 ];
 
