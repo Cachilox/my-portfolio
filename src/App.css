@@ -44,7 +44,7 @@ section {
     position: fixed;
     top: 0;
     right: -100%;
-    background: #0c0c0c84;
+    background-color: #0c0c0c84;
     z-index: 100;
     transition: right 0.3s ease-in;
     display: block;
@@ -57,7 +57,7 @@ section {
     top: 0;
     right: 0;
     z-index: 200;
-    background: #252424;
+    background: #fff;
     flex-direction: column;
     line-height: 30px;
     justify-content: center;

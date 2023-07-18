@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryColor: "#8873ef",
+        primaryColor: "#176B87",
         headingColor: "#081e21",
-        smallTextColor: "#193256",
+        smallTextColor: "#001C30",
       },
     },
   },

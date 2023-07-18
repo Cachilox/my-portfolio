@@ -62,6 +62,7 @@ const Hero = () => {
                   className="text-smallTextColor hover:text-slate-900 text-[1.3rem] active:relative active:top-[2px] font-[600]"
                 >
                   <i className="ri-github-fill dark:text-black"></i>
+                  <span className="sr-only">GitHub</span>
                 </a>
               </span>
               <span>
@@ -71,6 +72,7 @@ const Hero = () => {
                   className="text-smallTextColor hover:text-blue-600 active:relative active:top-[2px] text-[1.3rem] font-[600]"
                 >
                   <i className="ri-twitter-fill dark:text-blue-600"></i>
+                  <span className="sr-only">Twitter</span>
                 </a>
               </span>
               <span>
@@ -80,6 +82,7 @@ const Hero = () => {
                   className="text-smallTextColor hover:text-blue-500 active:relative active:top-[2px] text-[1.3rem] font-[600]"
                 >
                   <i className="ri-linkedin-box-fill dark:text-blue-700"></i>
+                  <span className="sr-only">LinkedIn</span>
                 </a>
               </span>
             </div>

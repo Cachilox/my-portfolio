@@ -4,6 +4,7 @@ const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const element = document.documentElement;
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -50,9 +51,12 @@ const Header = () => {
     }
   };
 
-  const toggleMenu = () => menuRef.current?.classList.toggle("show__menu");
+  const toggleMenu = () => {
+    menuRef.current?.classList.toggle("show__menu")
+    setMenuOpen(!menuOpen);
+  }
 
-  function onWindowMatch() {
+  const onWindowMatch = () => {
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && darkQuery.matches)
@@ -117,7 +121,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor  dark:text-white  font-[600]"
+                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
                   href="#about"
                 >
                   Acerca de
@@ -126,7 +130,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor dark:text-white font-[600]"
+                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
                   href="#education"
                 >
                   Educación
@@ -135,7 +139,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor dark:text-white font-[600]"
+                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
                   href="#skills"
                 >
                   Habilidades
@@ -144,7 +148,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor dark:text-white font-[600]"
+                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
                   href="#portfolio"
                 >
                   Portafolio
@@ -153,7 +157,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor dark:text-white font-[600]"
+                  className={`text-smallTextColor font-[600] ${menuOpen ? "text-smallTextColor" : "dark:text-white"}`}
                   href="#contact"
                 >
                   Contacto
@@ -165,28 +169,28 @@ const Header = () => {
 
           {/*============ menu right ============ */}
           <div className="flex items-center gap-4">
-          {theme === "dark" ? (
-              <button
+            {theme === "dark" ? (
+              <div
                 onClick={() => setTheme("light")}
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 cursor-pointer"
               >
                 <i className="ri-sun-line dark:text-white text-lg font-[600]"></i>
-              </button>
+              </div>
             ) : (
-              <button
+              <div
                 onClick={() => setTheme("dark")}
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 cursor-pointer"
               >
                 <i className="ri-moon-line text-lg font-[600]"></i>
-              </button>
+              </div>
             )}
 
-            <span
+            <div
               onClick={toggleMenu}
               className="text-2xl text-smallTextColor dark:text-white hidden show__menu cursor-pointer"
             >
               <i className="ri-menu-line"></i>
-            </span>
+            </div>
           </div>
         </div>
       </div>

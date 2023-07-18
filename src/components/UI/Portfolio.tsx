@@ -44,19 +44,19 @@ const Portfolio = () => {
           <div className="flex gap-3">
             <button
               onClick={() => setSelectTab("all")}
-              className="text-smallTextColor dark:text-white border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor dark:text-white border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px]"
             >
               All
             </button>
             <button
               onClick={() => setSelectTab("web-app")}
-              className="text-smallTextColor dark:text-white border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor dark:text-white border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px]"
             >
               Web App
             </button>
             <button
               onClick={() => setSelectTab("landing-page")}
-              className="text-smallTextColor dark:text-white border border-solid border-smallTextColor py-2 px-4 rounded-[8px]"
+              className="text-smallTextColor dark:text-white border border-solid border-smallTextColor dark:border-primaryColor py-2 px-4 rounded-[8px]"
             >
               Landing Page
             </button>
