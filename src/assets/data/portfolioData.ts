@@ -3,6 +3,7 @@ import portfolioImg02 from "../images/proyect-2.png";
 import portfolioImg03 from "../images/proyect-3.png";
 import portfolioImg04 from "../images/proyect-4.png";
 import portfolioImg05 from "../images/proyect-5.png";
+import portfolioImg06 from "../images/proyect-6.png";
 
 const proyects = [
   {
@@ -10,8 +11,6 @@ const proyects = [
     imgUrl: portfolioImg01,
     category: "Web App",
     title: "Facil Market",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: [
       "TypeScript",
       "React",
@@ -30,8 +29,6 @@ const proyects = [
     imgUrl: portfolioImg02,
     category: "Web App",
     title: "Electro Shop",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["JavaScript", "React", "Sass", "Firebase"],
     siteUrl: "https://electroshop.vercel.app/",
     repository: "https://github.com/Cachilox/Ecommerce-ElectroShop",
@@ -41,8 +38,6 @@ const proyects = [
     imgUrl: portfolioImg03,
     category: "Web App",
     title: "Henry Dogs",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: [
       "JavaScript",
       "React",
@@ -60,20 +55,25 @@ const proyects = [
     imgUrl: portfolioImg04,
     category: "Web App",
     title: "Sneakers",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
     technologies: ["JavaScript", "HTML5", "Sass"],
-    siteUrl: "#",
-    repository: "",
+    siteUrl: "https://cachilox.github.io/ecommerce-sneakers/",
+    repository: "https://github.com/Cachilox/ecommerce-sneakers",
   },
   {
     id: 5,
     imgUrl: portfolioImg05,
     category: "Landing page",
-    title: "Sneakers",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vitae sunt magnam numquam esse ipsam? Quis qui enim, temporibus dignissimos atque repellendus amet a velit. Dolorem quidem animi doloribus saepe!",
+    title: "Easybank",
     technologies: ["JavaScript", "HTML5", "Sass"],
+    siteUrl: "https://cachilox.github.io/Easybank-landing-page/",
+    repository: "https://github.com/Cachilox/Easybank-landing-page",
+  },
+  {
+    id: 6,
+    imgUrl: portfolioImg06,
+    category: "Web App",
+    title: "My portfolio",
+    technologies: ["TypeScript", "React", "Tailwindcss"],
     siteUrl: "#",
     repository: "",
   },

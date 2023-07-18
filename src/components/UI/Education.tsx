@@ -6,10 +6,10 @@ const Education = () => {
     <section className="overflow-x-hidden" id="education">
       <div className="container lg:pt-5">
         <div className="text-center">
-          <h2 className="text-headingColor font-[800] text-[2.4rem] mb-5">
+          <h2 className="text-headingColor dark:text-white font-[800] text-[2.4rem] mb-5">
             Educación
           </h2>
-          <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7">
+          <p className="lg:max-w-[600px] lg:mx-auto text-headingColor dark:text-white font-[500] text-[16px] leading-7">
             Desde 2021, me aventuré en el mundo del desarrollo web de forma
             autodidacta. Posteriormente, decidí llevar mi aprendizaje al
             siguiente nivel al inscribirme en la carrera de Desarrollo Frontend
@@ -33,8 +33,8 @@ const Education = () => {
                       data-aos-duration="1200"
                       className="w-full sm:w-1/2 sm:pr-8"
                     >
-                      <span className="text-smallTextColor text-[0.9rem] font-[700] pl-4">
-                        2023
+                      <span className="text-smallTextColor dark:text-white text-[0.9rem] font-[700] pl-4">
+                        mar. 2023 - jul. 2023
                       </span>
                       <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
@@ -68,8 +68,8 @@ const Education = () => {
                       data-aos-duration="1200"
                       className="w-full sm:w-1/2 sm:pl-8"
                     >
-                      <span className="text-smallTextColor pl-4 text-[0.9rem] font-[700]">
-                        2022
+                      <span className="text-smallTextColor dark:text-white pl-4 text-[0.9rem] font-[700]">
+                        may. 2022 - nov. 2022
                       </span>
                       <div className="bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150">
                         <h3 className="text-primaryColor font-[700] mb-3 group-hover:text-white group-hover:font-[600] text-xl">
@@ -77,10 +77,10 @@ const Education = () => {
                         </h3>
 
                         <p className="text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-[22px]">
-                          En la carrera adquirimos habilidades para crear sitios
-                          web y aprender las mejores prácticas de diseño web.
-                          Aprendimos a programar con JavaScript y React Js. Esto
-                          nos permite desarrollar sitios más complejos,
+                          En esta carrera adquirimos habilidades para crear
+                          sitios web y aprender las mejores prácticas de diseño
+                          web. Aprendimos a programar con JavaScript y React Js.
+                          Esto nos permite desarrollar sitios más complejos,
                           dinámicos y escalables.
                         </p>
                       </div>

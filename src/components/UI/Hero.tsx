@@ -12,14 +12,14 @@ const Hero = () => {
             <h5
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="text-headingColor font-[600] text-[17px]"
+              className="text-headingColor dark:text-white font-[600] text-[17px]"
             >
               Hola Bienvenido
             </h5>
             <h1
               data-aos="fade-up"
               data-aos-duration="1500"
-              className="text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
+              className="text-headingColor dark:text-white font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5"
             >
               Soy Mariano Alvarez <br /> Full Stack Developer
             </h1>
@@ -41,7 +41,7 @@ const Hero = () => {
             <p
               data-aos="fade-left"
               data-aos-duration="1500"
-              className="flex gap-2 text-headingColor mt-8 font-[500] text-[16px] sm:pl-14 sm:pr-10 leading-7 "
+              className="flex gap-2 text-headingColor dark:text-white mt-8 font-[500] text-[16px] sm:pl-14 sm:pr-10 leading-7 "
             >
               Con enfoque en front-end, especializado en React.js, y experiencia
               en desarrollo tanto front-end como back-end, mis principales
@@ -52,7 +52,7 @@ const Hero = () => {
             </p>
 
             <div className="flex items-center gap-9 mt-10">
-              <span className="text-smallTextColor text-[1.1rem] font-[600]">
+              <span className="text-smallTextColor dark:text-white text-[1.1rem] font-[600]">
                 Sígueme:
               </span>
               <span>
@@ -61,7 +61,7 @@ const Hero = () => {
                   target="_blank"
                   className="text-smallTextColor hover:text-slate-900 text-[1.3rem] active:relative active:top-[2px] font-[600]"
                 >
-                  <i className="ri-github-fill"></i>
+                  <i className="ri-github-fill dark:text-black"></i>
                 </a>
               </span>
               <span>
@@ -70,7 +70,7 @@ const Hero = () => {
                   target="_blank"
                   className="text-smallTextColor hover:text-blue-600 active:relative active:top-[2px] text-[1.3rem] font-[600]"
                 >
-                  <i className="ri-twitter-fill"></i>
+                  <i className="ri-twitter-fill dark:text-blue-600"></i>
                 </a>
               </span>
               <span>
@@ -79,7 +79,7 @@ const Hero = () => {
                   target="_blank"
                   className="text-smallTextColor hover:text-blue-500 active:relative active:top-[2px] text-[1.3rem] font-[600]"
                 >
-                  <i className="ri-linkedin-box-fill"></i>
+                  <i className="ri-linkedin-box-fill dark:text-blue-700"></i>
                 </a>
               </span>
             </div>
@@ -93,28 +93,28 @@ const Hero = () => {
           </div>
           {/* ========= Hero img end ========= */}
           {/* Hero content right */}
-          <div className="md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
+          <div className="md:basis-1/5 flex justify-center text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end">
             <div className="mb-10">
-              <h2 className="text-headingColor font-[700] text-[32px]">
+              <h2 className="text-headingColor dark:text-white font-[700] text-[32px]">
                 <CountUp start={0} end={2} duration={2} suffix="+" />
               </h2>
-              <h4 className="text-headingColor font-[600] text-[18px]">
+              <h4 className="text-headingColor dark:text-white font-[600] text-[18px]">
                 Años de experiencia
               </h4>
             </div>
             <div className="mb-10">
-              <h2 className="text-headingColor font-[700] text-[32px]">
+              <h2 className="text-headingColor dark:text-white font-[700] text-[32px]">
                 <CountUp start={0} end={100} duration={2} suffix="%" />
               </h2>
-              <h4 className="text-headingColor font-[600] text-[18px]">
+              <h4 className="text-headingColor dark:text-white font-[600] text-[18px]">
                 Ganas de aprender
               </h4>
             </div>
             <div className="mb-10">
-              <h2 className="text-headingColor font-[700] text-[32px]">
+              <h2 className="text-headingColor dark:text-white font-[700] text-[32px]">
                 <CountUp start={0} end={8} duration={2} suffix="+" />
               </h2>
-              <h4 className="text-headingColor font-[600] text-[18px]">
+              <h4 className="text-headingColor dark:text-white font-[600] text-[18px]">
                 Proyectos completados
               </h4>
             </div>

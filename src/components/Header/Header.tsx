@@ -1,8 +1,12 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+
+  const element = document.documentElement;
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
   const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
@@ -46,12 +50,50 @@ const Header = () => {
     }
   };
 
-  const toggleMenu = () => menuRef.current?.classList.toggle("show__menu")
+  const toggleMenu = () => menuRef.current?.classList.toggle("show__menu");
+
+  function onWindowMatch() {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && darkQuery.matches)
+    ) {
+      element.classList.add("dark");
+    } else {
+      element.classList.remove("dark");
+    }
+  }
+
+  useEffect(() => {
+    switch (theme) {
+      case "dark":
+        element.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+        break;
+      case "light":
+        element.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+        break;
+      default:
+        window.localStorage.removeItem("theme");
+        onWindowMatch();
+        break;
+    }
+  }, [theme, element.classList]);
+
+  darkQuery.addEventListener("change", (e) => {
+    if (!("theme" in localStorage)) {
+      if (e.matches) {
+        element.classList.add("dark");
+      } else {
+        element.classList.remove("dark");
+      }
+    }
+  });
 
   return (
     <header
       ref={headerRef}
-      className="w-full h-20 leading-[80px] flex items-center"
+      className="w-full h-20 leading-[80px] flex items-center dark:bg-gray-900"
     >
       <div className="container">
         <div className="flex items-center justify-between">
@@ -62,7 +104,9 @@ const Header = () => {
             </span>
 
             <div className="leading-5">
-              <h2 className="text-xl text-smallTextColor font-bold">Mariano</h2>
+              <h2 className="text-xl text-smallTextColor font-bold dark:text-white">
+                Mariano
+              </h2>
             </div>
           </div>
           {/*============ LOGO END ============ */}
@@ -73,7 +117,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor font-[600]"
+                  className="text-smallTextColor  dark:text-white  font-[600]"
                   href="#about"
                 >
                   Acerca de
@@ -82,7 +126,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor font-[600]"
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#education"
                 >
                   Educación
@@ -91,7 +135,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor font-[600]"
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#skills"
                 >
                   Habilidades
@@ -100,7 +144,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor font-[600]"
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#portfolio"
                 >
                   Portafolio
@@ -109,7 +153,7 @@ const Header = () => {
               <li>
                 <a
                   onClick={handleClick}
-                  className="text-smallTextColor font-[600]"
+                  className="text-smallTextColor dark:text-white font-[600]"
                   href="#contact"
                 >
                   Contacto
@@ -121,11 +165,26 @@ const Header = () => {
 
           {/*============ menu right ============ */}
           <div className="flex items-center gap-4">
-            <button className="flex items-center gap-2">
-              <i className="ri-moon-line text-lg font-[600]"></i>
-            </button>
+          {theme === "dark" ? (
+              <button
+                onClick={() => setTheme("light")}
+                className="flex items-center gap-2"
+              >
+                <i className="ri-sun-line dark:text-white text-lg font-[600]"></i>
+              </button>
+            ) : (
+              <button
+                onClick={() => setTheme("dark")}
+                className="flex items-center gap-2"
+              >
+                <i className="ri-moon-line text-lg font-[600]"></i>
+              </button>
+            )}
 
-            <span onClick={toggleMenu} className="text-2xl text-smallTextColor hidden show__menu cursor-pointer">
+            <span
+              onClick={toggleMenu}
+              className="text-2xl text-smallTextColor dark:text-white hidden show__menu cursor-pointer"
+            >
               <i className="ri-menu-line"></i>
             </span>
           </div>

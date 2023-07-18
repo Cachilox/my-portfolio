@@ -8,6 +8,8 @@ import "remixicon/fonts/remixicon.css"
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <div className="bg-gray-100 dark:bg-gray-900 transition-colors">
+      <App />
+    </div>
   </React.StrictMode>,
 )

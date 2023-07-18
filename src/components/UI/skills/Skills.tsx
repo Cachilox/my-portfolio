@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <div className="container">
-        <h3 className="text-headingColor text-[2rem] font-[700] mb-12">
+        <h3 className="text-headingColor dark:text-white text-[2rem] font-[700] mb-12">
           Habilidades
         </h3>
 

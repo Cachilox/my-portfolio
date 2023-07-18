@@ -1,6 +1,8 @@
 import "./App.css";
 import { useEffect } from "react";
 import Aos from "aos";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Componentes
 import Header from "./components/Header/Header";
@@ -25,6 +27,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Contact />
+        <ToastContainer />
       </main>
       <Footer />
     </>
