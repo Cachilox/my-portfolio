@@ -30,7 +30,7 @@ const Hero = () => {
               className="flex items-center gap-6 mt-7"
             >
               <a
-                href="https://drive.google.com/file/d/1oEt9EHT3sxbfDLwZhLHSl3rxMbTZ5J9q/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1V5KJtCu3KqS1BXduGUa6bcqSHhuPb2-9/view?usp=drive_link"
                 target="_blank"
                 className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
               >
