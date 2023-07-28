@@ -40,7 +40,7 @@ const proyects = [
     imgUrl: portfolioImg03,
     category: "Web App",
     title: "Henry Dogs",
-    description: "aplicación SPA 'Single Page Application' con funcionalidades como filtros, búsqueda, ordenamiento, paginación y formulario controlado para crear una raza.",
+    description: "Diseñar y desarrollar una App de perros que incluía: búsquedas, filtrados, ordenamientos y creación.",
     technologies: [
       "JavaScript",
       "React",
@@ -68,7 +68,7 @@ const proyects = [
     imgUrl: portfolioImg05,
     category: "Landing page",
     title: "Easybank",
-    description: "Esta landing page es un desafío de codificación de Frontend mentor.",
+    description: "desarrollar una landing page de un desafío de codificación de Frontend mentor.",
     technologies: ["JavaScript", "HTML5", "Sass"],
     siteUrl: "https://cachilox.github.io/Easybank-landing-page/",
     repository: "https://github.com/Cachilox/Easybank-landing-page",
