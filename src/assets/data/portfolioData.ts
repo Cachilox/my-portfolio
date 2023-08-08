@@ -4,6 +4,7 @@ import portfolioImg03 from "../images/proyect-3.png";
 import portfolioImg04 from "../images/proyect-4.png";
 import portfolioImg05 from "../images/proyect-5.png";
 import portfolioImg06 from "../images/proyect-6.png";
+import portfolioImg07 from "../images/proyect-7.png";
 
 const proyects = [
   {
@@ -82,6 +83,16 @@ const proyects = [
     technologies: ["TypeScript", "React", "Tailwindcss"],
     siteUrl: "/",
     repository: "https://github.com/Cachilox/my-portfolio",
+  },
+  {
+    id: 7,
+    imgUrl: portfolioImg07,
+    category: "Landing page",
+    title: "News homepage",
+    description: "desarrollar una landing page de un desafío de codificación de Frontend mentor.",
+    technologies: ["TypeScript", "React", "Tailwindcss"],
+    siteUrl: "https://news-homepage-cachilox.vercel.app/",
+    repository: "https://github.com/Cachilox/news-homepage",
   },
 ];
 
