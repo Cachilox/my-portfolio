@@ -5,6 +5,7 @@ import portfolioImg04 from "../images/proyect-4.png";
 import portfolioImg05 from "../images/proyect-5.png";
 import portfolioImg06 from "../images/proyect-6.png";
 import portfolioImg07 from "../images/proyect-7.png";
+import portfolioImg08 from "../images/proyect-8.png";
 
 const proyects = [
   {
@@ -94,6 +95,16 @@ const proyects = [
     siteUrl: "https://news-homepage-cachilox.vercel.app/",
     repository: "https://github.com/Cachilox/news-homepage",
   },
+  {
+    id: 8,
+    imgUrl: portfolioImg08,
+    category: "Web App",
+    title: "Car Hub",
+    description: "Carhub es una aplicación moderna que aprovecha lo último y lo mejor que Next 13 tiene para ofrecer, aprovechando funciones como renderizado del lado del servidor y enrutador de aplicaciones.",
+    technologies: ["Next.js", "TypeScript", "Tailwindcss"],
+    siteUrl: "https://car-hub-x.vercel.app/",
+    repository: "https://github.com/Cachilox/car-hub",
+  }
 ];
 
 export default proyects;
